@@ -29,7 +29,8 @@ html {
 .home-login {
   display: grid;
   place-items: center;
-  line-height: 5rem;
+  line-height: 3rem;
+  padding-bottom: 2rem;
 }
 
 .subtitle {
@@ -37,9 +38,8 @@ html {
 }
 .home-login .logo {
   width: 250px;
-  margin-bottom: 3rem;
-
   display: none;
+  padding-bottom: 4rem;
 }
 .form-container {
   width: 450px;
@@ -99,11 +99,11 @@ html {
     display: grid;
     place-items: center;
     line-height: 4rem;
+    padding-bottom: 3rem;
   }
 
   .home-login .logo {
     width: 190px;
-    margin-bottom: 4rem;
     display: block;
   }
 
