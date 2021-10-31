@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --text-input-field: #f7f7f7;
+  --very-light-grey: #c7c7c7;
+  --raydesite-yellow: #fcb21a;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* * OTHERS */
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  font-size: 2.4rem;
+}
+
+.home-login {
+  display: grid;
+  place-items: center;
+  line-height: 3rem;
+  padding-bottom: 2rem;
+}
+
+.title {
+  margin: 1rem;
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: var(--very-light-grey);
+}
+.home-login .logo {
+  width: 250px;
+  display: none;
+  padding-bottom: 4rem;
+}
+.form-container {
+  width: 450px;
+  margin: 0 auto;
+  line-height: 4rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.label {
+  margin: 1rem;
+  padding: 0.3rem;
+}
+
+.input {
+  border: none;
+  border-radius: 5px;
+  padding: 1.4rem;
+  display: block;
+  width: 100%;
+  font-size: 1.8rem;
+  background-color: var(--text-input-field);
+}
+
+.primary-button {
+  background-color: var(--raydesite-yellow);
+  border-radius: 12px;
+  border: none;
+  color: var(--white);
+  font-weight: bold;
+}
+
+.secundary-button {
+  background-color: var(--white);
+  border-radius: 12px;
+  border: 1px solid var(--raydesite-yellow);
+  color: var(--raydesite-yellow);
+  font-weight: bold;
+}
+
+.login-button {
+  padding: 1.8rem;
+  margin: 2rem 1.2rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.button {
+  margin-top: 6rem;
+}
+
+.forgot-login {
+  text-align: center;
+  color: var(--raydesite-yellow);
+  text-decoration: none;
+}
+
+/* * MOBILE */
+@media (max-width: 640px) {
+  .login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+  }
+
+  .home-login {
+    display: grid;
+    place-items: center;
+    line-height: 4rem;
+    padding-bottom: 3rem;
+  }
+
+  .home-login .logo {
+    width: 190px;
+    display: block;
+  }
+
+  .subtitle {
+    font-size: 2.4rem;
+  }
+
+  .form-container {
+    width: 100%;
+    line-height: 4rem;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .label {
+    margin: 1rem;
+    padding: 0.3rem;
+  }
+
+  .input {
+    border-radius: 5px;
+    padding: 1.4rem;
+    display: block;
+    width: 100%;
+    color: var(--very-light-grey);
+  }
+
+  .primary-button {
+    background-color: var(--raydesite-yellow);
+  }
+
+  .login-button {
+    border-radius: 12px;
+    padding: 1.8rem;
+    margin: 2rem 1.2rem;
+    font-size: 1.6rem;
+  }
+
+  .button {
+    margin-top: 12rem;
+  }
+}

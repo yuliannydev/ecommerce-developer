@@ -33,6 +33,11 @@ html {
   padding-bottom: 2rem;
 }
 
+.title {
+  margin: 1rem;
+  font-size: 2.6rem;
+  font-weight: 600;
+}
 .subtitle {
   color: var(--very-light-grey);
 }

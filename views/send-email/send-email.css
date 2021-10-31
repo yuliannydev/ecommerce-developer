@@ -32,6 +32,12 @@ html {
   margin: 0 auto;
   line-height: 4rem;
 }
+
+.title {
+  margin: 1rem;
+  font-size: 2.6rem;
+  font-weight: 600;
+}
 .subtitle {
   color: var(--very-light-grey);
   line-height: 3rem;
@@ -61,7 +67,7 @@ html {
 }
 
 .email {
-  width: 100px;
+  width: 90px;
   margin: 4rem;
 }
 .primary-button {
