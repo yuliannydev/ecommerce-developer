@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --text-input-field: #f7f7f7;
+  --very-light-grey: #c7c7c7;
+  --raydesite-yellow: #fcb21a;
+  --card-size-lg: 240px;
+  --card-size-sm: 150px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* * OTHERS VIEWPORTS */
+
+/******
+!Clases
+* main-container
+* cards-container
+* product-card
+* product-info
+* icon
+! Elementos
+* p
+* figure
+******/
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 24rem);
+  font-size: 2rem;
+  gap: 2.5rem;
+  place-content: center;
+}
+
+.product-card {
+  width: 24rem;
+}
+
+.product-img {
+  width: var(--card-size-lg);
+  height: var(--card-size-lg);
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.product-details p:nth-child(1) {
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+
+.product-details p:nth-child(2) {
+  font-size: 1.8rem;
+  color: var(--very-light-grey);
+}
+
+/* *MOBILE */
+@media (max-width: 640px) {
+  .cards-container {
+    grid-template-columns: repeat(auto-fill, 15rem);
+    gap: 2.8rem;
+  }
+  .product-card {
+    width: 15rem;
+  }
+  .product-img {
+    width: var(--card-size-sm);
+    height: var(--card-size-sm);
+  }
+}

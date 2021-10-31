@@ -92,6 +92,7 @@ html {
   font-weight: 300;
 }
 
+/* * MOBILE */
 @media (max-width: 640px) {
   .send-email {
     width: 90%;
